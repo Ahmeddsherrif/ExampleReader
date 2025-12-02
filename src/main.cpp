@@ -18,7 +18,7 @@ std::string readFile(const std::string& path) {
 
 int main() {
     try {
-        const std::string ROOT = "/root/example/project";
+        const std::string ROOT = "/root/example/ExampleReader";
 
         const std::string authPath   = ROOT + "/authentication/auth.ini";
         const std::string certPath   = ROOT + "/certs/server.crt";
