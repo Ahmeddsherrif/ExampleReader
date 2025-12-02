@@ -2,6 +2,7 @@
 #include <fstream>
 #include <sstream>
 #include <filesystem>
+#include <cstdlib>   // for getenv
 #include <nlohmann/json.hpp>
 
 using json = nlohmann::json;
@@ -18,7 +19,11 @@ std::string readFile(const std::string& path) {
 
 int main() {
     try {
-        const std::string ROOT = "/root/example/ExampleReader";
+        const char* rootEnv = std::getenv("EXAMPLE_VAR");
+        if (!rootEnv) {
+            throw std::runtime_error("Environment variable EXAMPLE_VAR is not set.");
+        }
+        const std::string ROOT = rootEnv;
 
         const std::string authPath   = ROOT + "/authentication/auth.ini";
         const std::string certPath   = ROOT + "/certs/server.crt";
