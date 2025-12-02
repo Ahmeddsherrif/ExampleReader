@@ -20,3 +20,7 @@ Makefile
 # Binaries
 example_reader
 *.out
+
+
+# Log Files
+/debug
