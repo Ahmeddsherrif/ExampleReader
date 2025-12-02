@@ -1,0 +1,22 @@
+# Build artifacts
+/build/
+/build/*
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+
+# Binaries
+example_reader
+*.out

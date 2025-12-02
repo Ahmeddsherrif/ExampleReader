@@ -1,0 +1,5 @@
+{
+    "app_name": "TelemetryProcessor",
+    "version": "1.4.2",
+    "enable_logs": true
+}

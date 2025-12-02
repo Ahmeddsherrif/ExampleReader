@@ -1,0 +1,6 @@
+{
+    "host": "db.prod.example.com",
+    "port": 5432,
+    "username": "telemetry_user",
+    "database": "telemetry"
+}
